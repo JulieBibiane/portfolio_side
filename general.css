@@ -1,0 +1,51 @@
+/* Brødtekst */
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #111;
+}
+
+/* Overskrifter */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+/* Hero / ekstra vigtige overskrifter */
+.hero-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+/* Navigation & menu */
+nav,
+nav a,
+.menu,
+.menu a {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+/* Knapper */
+button,
+.btn {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+/* Små UI-tekster (labels, tags) */
+.label,
+.tag,
+.meta {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+}
