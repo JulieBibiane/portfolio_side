@@ -11,7 +11,90 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="general.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="kontakt.css" />
+    <title>Kontakt</title>
   </head>
-  <body></body>
+  <body>
+    <header class="header header--home">
+      <div class="header-inner">
+        <a href="index.html" class="logo">
+          <img src="logo.webp" alt="Julie Stigsen logo" />
+        </a>
+
+        <nav class="nav">
+          <a href="ommig.html">Om mig</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="kontakt.html">Kontakt</a>
+        </nav>
+      </div>
+    </header>
+    <main class="contact-page">
+      <h1 class="portfolio-header">Kontakt</h1>
+
+      <section class="contact-content">
+        <!-- Venstre: info -->
+        <div class="contact-info">
+          <h3>Info om mig</h3>
+
+          <ul class="contact-list">
+            <li>
+              <span class="label">Navn</span>
+              <span class="value">Julie Bibiane Høegh Stigsen</span>
+            </li>
+            <li>
+              <span class="label">E-mail</span>
+              <span class="value">just0003@stud.ek.dk</span>
+            </li>
+            <li>
+              <span class="label">Telefon</span>
+              <span class="value">+45 29 89 13 98</span>
+            </li>
+            <li>
+              <span class="label">Lokation</span>
+              <span class="value">København Ø, Danmark</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Højre: formular -->
+        <div class="contact-form">
+          <h3>Kontakt mig i dag</h3>
+
+          <form id="contactForm">
+            <label for="name">Dit navn</label>
+            <input type="text" id="name" required />
+
+            <label for="email">Din e-mail</label>
+            <input type="email" id="email" required />
+
+            <label for="message">Besked</label>
+            <textarea id="message" rows="5" required></textarea>
+
+            <button type="submit" class="contact-btn">Send besked</button>
+          </form>
+        </div>
+      </section>
+      <div class="spacer"></div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-left">
+        <div class="logo-footer">
+          <a href="index.html" class="logo">
+            <img src="logo.webp" alt="Logo" />
+          </a>
+        </div>
+        <div class="footer-contact">
+          <p class="footer-name">Julie Bibiane Høegh Stigsen</p>
+          <p class="footer-email">just0003@stud.ek.dk</p>
+        </div>
+      </div>
+      <nav class="footer-nav">
+        <a href="ommig.html">Om mig</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="kontakt.html">Kontakt</a>
+      </nav>
+    </footer>
+    <script src="main.js"></script>
+  </body>
 </html>

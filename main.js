@@ -8,3 +8,17 @@ window.addEventListener("scroll", () => {
   // opacity går fra 1 til 0 når vi scroller
   hero.style.opacity = 1 - scrollY / heroHeight;
 });
+
+// fake form på kontakt siden, så det ligner at den sender
+
+const form = document.getElementById("contactForm");
+
+if (form) {
+  form.addEventListener("submit", function (e) {
+    e.preventDefault(); // Forhindrer reload
+
+    form.reset(); // Tømmer felterne
+
+    alert("Tak for din besked! Jeg vender tilbage hurtigst muligt.");
+  });
+}

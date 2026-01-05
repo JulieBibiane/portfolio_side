@@ -1,0 +1,100 @@
+.contact-page {
+  padding: 4rem 2rem;
+}
+
+.contact-title {
+  text-align: center;
+  color: #e09e96;
+  margin-bottom: 4rem;
+}
+
+/* To kolonner */
+.contact-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+}
+
+/* Overskrifter */
+.contact-info h3,
+.contact-form h3 {
+  color: #e09e96;
+  margin-bottom: 5rem;
+}
+.portfolio-header {
+  text-align: center;
+  padding: 8rem 6rem;
+  max-width: 800px;
+  margin: 0 auto;
+
+  font-size: 2.8rem;
+}
+
+/* Info-liste */
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-list li {
+  margin-bottom: 1.2rem;
+}
+
+.contact-list .label {
+  display: block;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.contact-list .value {
+  font-family: "Inter", sans-serif;
+  color: #555;
+}
+
+/* Formular */
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-bottom: 0.3rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 1.2rem;
+  padding: 0.6rem;
+  border: none;
+  background-color: #e09e96;
+  font-family: "Inter", sans-serif;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+}
+
+/* Knap */
+.contact-btn {
+  align-self: flex-start;
+  background-color: #000;
+  color: #e09e96;
+  border: none;
+  padding: 0.6rem 1.4rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.contact-btn:hover {
+  background-color: #e09e96;
+  color: #000;
+  border: 1px solid #000;
+}
