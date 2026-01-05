@@ -1,0 +1,71 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Nulstil så scrolle nede i bunden fjernes, indhold bliver ikke bredere end viewport */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.portfolio-header {
+  text-align: center;
+  padding: 8rem 6rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.portfolio-header h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #111;
+}
+
+.portfolio-header p {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.sticky-portfolio-menu {
+  position: sticky; /* gør menuen sticky */
+  top: 0; /* sidder altid øverst */
+  width: 100%;
+  background-image: url("forsidebillede.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 20;
+
+  display: flex;
+  justify-content: center; /* centrer menuen horisontalt */
+  padding: 1rem 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* lidt skygge, så den står ud */
+}
+
+.sticky-portfolio-menu nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2.5rem; /* afstand mellem menuitems */
+  margin: 0;
+  padding: 0;
+}
+
+.sticky-portfolio-menu nav a {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: white; /* hvid tekst ovenpå billedet */
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.sticky-portfolio-menu nav a:hover {
+  color: black;
+}
