@@ -1,0 +1,128 @@
+.hero {
+  height: 100vh;
+  background-image: url("forsidebillede.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /*  til venstre */
+  position: relative;
+}
+
+.hero-content {
+  position: relative;
+  text-align: left; /*  ikke centreret */
+  padding-left: 2rem;
+  color: white;
+  max-width: 780px;
+}
+
+.hero-title {
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  font-weight: 380;
+}
+
+.header--home {
+  color: white;
+}
+
+.header--home .nav a {
+  color: white;
+}
+
+.header--home .nav a:hover {
+  opacity: 0.8;
+}
+
+/* --- Hero fade effekten --- */
+.hero {
+  height: 100vh;
+  background-image: url("forsidebillede.webp");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  transition: opacity 0.5s ease;
+}
+
+/* --- Intro sektionen --- */
+.intro-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 2rem;
+  background-color: #ffffff; /* næste sektion baggrund */
+}
+
+.intro-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  align-items: center;
+  gap: 2rem;
+}
+
+.intro-text {
+  flex: 1;
+  min-width: 280px;
+  text-align: center; /* centrerer teksten */
+}
+
+.intro-image {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  justify-content: center;
+}
+
+.intro-image img {
+  max-width: 75%;
+  height: auto;
+  border-radius: 50%; /* gør den rund */
+  object-fit: cover; /* sørger for billedet fylder hele cirklen uden at blive strukket */
+}
+
+/* --- Portfolio sektion --- */
+.portfolio-intro {
+  background-color: #e09e96;
+  text-align: center;
+  padding: 3rem 1rem; /* smal men med lidt luft rundt */
+}
+
+.portfolio-intro h2 {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+/* --- Knappen --- */
+.portfolio-btn {
+  display: inline-block;
+  background-color: black;
+  color: #e09e96;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Hover effekt */
+.portfolio-btn:hover {
+  background-color: white;
+  color: #e09e96;
+}

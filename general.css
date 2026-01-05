@@ -1,3 +1,16 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Nulstil så scrolle nede i bunden fjernes, indhold bliver ikke bredere end viewport */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #fafafa;
 }
@@ -28,7 +41,7 @@ h6 {
   font-weight: 700;
 }
 
-/* Navigation & menu */
+/* Navigation, menu */
 nav,
 nav a,
 .menu,
@@ -45,11 +58,103 @@ button,
   letter-spacing: 0.02em;
 }
 
-/* Små UI-tekster (labels, tags) */
+/* Små UI-tekster */
 .label,
 .tag,
 .meta {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 0.875rem;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.header-inner {
+  width: 100%;
+  padding: 1.5rem 3rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav a {
+  margin-left: 2rem;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.logo img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%; /* gør den rund */
+  object-fit: cover; /* sørger for billedet fylder hele cirklen uden at blive strukket */
+}
+
+/* --- Spacer mellem portfolio og footer --- */
+.spacer {
+  height: 10rem; /* luft før footer */
+  background-color: #fafafa; /* normal baggrund */
+}
+
+/* --- Footer --- */
+.site-footer {
+  background-color: #fafafa;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 3rem;
+  flex-wrap: wrap;
+  border-top: 1px solid #ddd; /* lille streg som adskiller til footeren */
+}
+
+/* Venstre side: logo + kontakt */
+.footer-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo-footer img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%; /* rundt logo */
+  object-fit: cover;
+  display: block;
+}
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  font-family: "Inter", sans-serif;
+  font-weight: 300; /* tynd tekst */
+  font-size: 0.9rem;
+}
+
+.footer-contact .footer-name {
+  margin: 0;
+}
+
+.footer-contact .footer-email {
+  margin: 0;
+}
+
+/* Højre side: menu */
+.footer-nav a {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  text-decoration: none;
+  margin-left: 2rem;
+  color: #111;
+  font-size: 1rem;
+}
+
+.footer-nav a:hover {
+  opacity: 0.7;
 }
