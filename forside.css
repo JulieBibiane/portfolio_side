@@ -123,6 +123,7 @@
 
 /* Hover effekt */
 .portfolio-btn:hover {
-  background-color: white;
-  color: #e09e96;
+  background-color: #e09e96;
+  color: #000;
+  border: 1px solid #000;
 }

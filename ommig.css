@@ -1,0 +1,134 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Nulstil så scrolle nede i bunden fjernes, indhold bliver ikke bredere end viewport */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Lottie / animationen */
+.about-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-hero lottie-player {
+  width: 1000px;
+  height: 600px;
+}
+
+.about-content {
+  display: flex;
+  justify-content: center;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  max-width: 1100px;
+  width: 100%;
+}
+
+/* Billede */
+.about-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.about-image img {
+  max-width: 75%;
+  height: auto;
+  border-radius: 12px;
+  border-radius: 50%; /* gør den rund */
+  object-fit: cover; /* sørger for billedet fylder hele cirklen uden at blive strukket */
+}
+
+/* Tekst */
+.about-text {
+  flex: 1;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  line-height: 1.6;
+}
+
+.about-extra {
+  padding: 8rem 4rem;
+}
+
+.about-extra h2 {
+  color: #e09e96;
+  margin-bottom: 1rem;
+}
+
+.about-extra p {
+  font-family: "Inter", sans-serif;
+  line-height: 1.2;
+  color: #111;
+}
+/* lyserød sektion */
+.cta-section {
+  background-color: #e09e96;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.cta-section h2 {
+  color: #fff;
+  margin-bottom: 1.5rem;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #000;
+  color: #e09e96;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #e09e96;
+  color: #000;
+  border: 1px solid #000;
+}
+
+/* lille punktliste ting */
+.skills {
+  max-width: 800px;
+  margin: 0 auto 4rem;
+  padding: 0 2rem;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skills-list li {
+  margin-bottom: 1.5rem;
+}
+
+.skill-title {
+  display: block;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.skill-items {
+  display: block;
+  font-family: "Inter", sans-serif;
+  color: #555;
+  line-height: 1.5;
+}
