@@ -22,3 +22,20 @@ if (form) {
     alert("Tak for din besked! Jeg vender tilbage hurtigst muligt.");
   });
 }
+
+// vis mere java til portfolio siden
+const toggleButtons = document.querySelectorAll(".toggle-btn");
+
+toggleButtons.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const moreContent = btn.nextElementSibling;
+
+    moreContent.style.display =
+      moreContent.style.display === "block" ? "none" : "block";
+
+    btn.textContent =
+      moreContent.style.display === "block"
+        ? "Skjul process og læring"
+        : "Se process og læring";
+  });
+});
