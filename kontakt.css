@@ -98,3 +98,65 @@
   color: #000;
   border: 1px solid #000;
 }
+
+/* --- Mobile layout  --- */
+@media (max-width: 768px) {
+  /* Header burger sort */
+  .burger span {
+    background-color: black;
+  }
+
+  /* Footer menu skjules */
+  .footer-nav {
+    display: none;
+  }
+
+  /* Kontakt-side indhold til én kolonne */
+  .contact-page {
+    padding: 2rem 1.5rem;
+  }
+
+  .portfolio-header {
+    padding: 5rem 1.5rem;
+    font-size: 2.4rem;
+  }
+
+  .contact-content {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    max-width: 100%;
+  }
+
+  .contact-info,
+  .contact-form {
+    width: 100%;
+    text-align: center;
+  }
+
+  .contact-info h3,
+  .contact-form h3 {
+    margin-bottom: 2rem;
+  }
+
+  .contact-list li {
+    margin-bottom: 0.8rem;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .contact-btn {
+    align-self: center;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+  }
+
+  /* Spacer mindre */
+  .spacer {
+    height: 5rem;
+  }
+}

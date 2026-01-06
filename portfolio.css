@@ -110,13 +110,13 @@ body {
 
 /* Vis mere */
 .toggle-btn {
-  margin-top: 1.5rem;
+  margin-top: 2rem;
   background: none;
   border: none;
   color: #e09e96;
   font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  cursor: pointer;
+  font-weight: 800;
+  font-size: 18px;
 }
 
 /* Skjult indhold */
@@ -153,4 +153,67 @@ body {
   background-color: #e09e96;
   color: #000;
   border: 1px solid #000;
+}
+
+/* --- Mobile styling --- */
+@media (max-width: 768px) {
+  /* Portfolio header */
+  .portfolio-header {
+    padding: 4rem 1.5rem;
+    text-align: center; /* centrering på mobil */
+  }
+
+  /* Sticky menu */
+  .sticky-portfolio-menu {
+    flex-direction: column; /* menuen kan stå i kolonne hvis trang plads */
+    padding: 0.5rem 0;
+  }
+
+  .sticky-portfolio-menu nav ul {
+    flex-direction: column; /* menu items under hinanden på smalle skærme */
+    gap: 1rem;
+    align-items: center;
+  }
+
+  /* Portfolio tasks */
+  .portfolio-task {
+    padding: 0 1rem;
+  }
+
+  /* Billeder: stack ovenpå hinanden, juster størrelse */
+  .task-images {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .task-images img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Tekst: kun overskrift + intro centreret, resten venstrejusteret */
+  .task-title,
+  .task-intro {
+    text-align: center;
+  }
+
+  /* Rest af tekst holder standard venstrejustering */
+  .portfolio-task p,
+  .portfolio-task h3,
+  .portfolio-task h4,
+  .task-links {
+    text-align: left;
+  }
+
+  /* Vis mere sektion */
+  .task-more {
+    margin-top: 1.5rem;
+  }
+
+  /* Knap links: fuld bredde på små skærme for bedre touch */
+  .task-link {
+    width: 100%;
+    text-align: center;
+    padding: 0.6rem 0;
+  }
 }

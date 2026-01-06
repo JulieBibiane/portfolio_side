@@ -19,19 +19,36 @@
     <link rel="manifest" href="site.webmanifest" />
   </head>
   <body>
-    <header class="header header--home">
+    <header class="header header--subpage">
       <div class="header-inner">
         <a href="index.html" class="logo">
           <img src="logo.webp" alt="Julie Stigsen logo" />
         </a>
 
+        <!-- Desktop menu -->
         <nav class="nav">
+          <a href="ommig.html">Om mig</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="kontakt.html">Kontakt</a>
+        </nav>
+
+        <!-- Burger (mobil) -->
+        <input type="checkbox" class="burger-toggle" id="burger-toggle-sub" />
+        <label for="burger-toggle-sub" class="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+
+        <!-- Mobil menu -->
+        <nav class="mobile-nav">
           <a href="ommig.html">Om mig</a>
           <a href="portfolio.html">Portfolio</a>
           <a href="kontakt.html">Kontakt</a>
         </nav>
       </div>
     </header>
+
     <main class="contact-page">
       <h1 class="portfolio-header">Kontakt</h1>
 

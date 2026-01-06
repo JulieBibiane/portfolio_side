@@ -132,3 +132,56 @@ body {
   color: #555;
   line-height: 1.5;
 }
+
+/* --- mobil layout --- */
+@media (max-width: 768px) {
+  /* Hero / animation */
+  .about-hero lottie-player {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Om mig container: tekst først, billede nedenunder */
+  .about-container {
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .about-text {
+    order: 1; /* sørger for tekst først */
+    text-align: center;
+    padding: 0 1.5rem;
+  }
+
+  .about-image {
+    order: 2; /* billede efter tekst */
+    display: flex;
+    justify-content: center;
+  }
+
+  .about-image img {
+    max-width: 70%;
+    height: auto;
+  }
+
+  /* Ekstra sektioner padding */
+  .about-extra {
+    padding: 4rem 2rem;
+  }
+
+  /* CTA - Mit CV centreret */
+  .cta-section {
+    text-align: center;
+    padding: 4rem 2rem;
+  }
+
+  .cta-button {
+    margin: 0 auto;
+  }
+
+  /* Skills liste */
+  .skills-list {
+    padding: 0 1.5rem;
+  }
+}

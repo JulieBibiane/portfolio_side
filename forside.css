@@ -127,3 +127,21 @@
   color: #000;
   border: 1px solid #000;
 }
+
+/*  Burger */
+/* --- Hero specific  --- */
+.header--home .burger span {
+  background-color: white;
+}
+
+.header--home .mobile-nav {
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
+.header--home .nav a {
+  color: white;
+}
+
+.header--home .nav a:hover {
+  opacity: 0.8;
+}
