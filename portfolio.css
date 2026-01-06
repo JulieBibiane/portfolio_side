@@ -1,10 +1,10 @@
+/* Nulstil så scrolle nede i bunden fjernes, indhold bliver ikke bredere end viewport */
 html,
 body {
   margin: 0;
   padding: 0;
 }
 
-/* Nulstil så scrolle nede i bunden fjernes, indhold bliver ikke bredere end viewport */
 *,
 *::before,
 *::after {
