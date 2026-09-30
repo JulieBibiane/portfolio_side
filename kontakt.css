@@ -1,0 +1,87 @@
+.contact-page {
+  padding: 4rem 2rem;
+}
+
+.portfolio-header {
+  text-align: center;
+  padding: 8rem 6rem 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 2.8rem;
+}
+
+/* Centreret kontakt-info */
+.contact-content {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0 4rem;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-width: 360px;
+  width: 100%;
+}
+
+.contact-list li {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  padding: 1.2rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.contact-list li:last-child {
+  border-bottom: none;
+}
+
+.contact-list .label {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: #e09e96;
+}
+
+.contact-list .value {
+  font-family: "Inter", sans-serif;
+  font-size: 1.05rem;
+  color: #222;
+}
+
+.contact-link {
+  text-decoration: none;
+  color: #222;
+  transition: color 0.2s ease;
+}
+
+.contact-link:hover {
+  color: #e09e96;
+}
+
+/* --- Mobile layout --- */
+@media (max-width: 768px) {
+  .footer-nav {
+    display: none;
+  }
+
+  .contact-page {
+    padding: 2rem 1.5rem;
+  }
+
+  .portfolio-header {
+    padding: 5rem 1.5rem 1.5rem;
+    font-size: 2.4rem;
+  }
+
+  .contact-list {
+    text-align: center;
+  }
+
+  .spacer {
+    height: 5rem;
+  }
+}

@@ -1,0 +1,260 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* --- Header --- */
+.portfolio-header {
+  text-align: center;
+  padding: 8rem 6rem 3rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.portfolio-header h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #111;
+}
+
+.portfolio-header p {
+  font-family: "Inter", sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* --- Projekt tag (bruges begge steder) --- */
+.project-tag {
+  display: inline-block;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 0.8rem;
+  letter-spacing: 0.02em;
+  color: #e09e96;
+  text-transform: uppercase;
+  margin-bottom: 0.6rem;
+}
+
+/* --- Projekt-oversigt: 3 klikbare kort --- */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto 6rem;
+  padding: 0 2rem;
+}
+
+.project-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.1);
+}
+
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.project-card-body {
+  padding: 1.2rem 1.4rem 1.6rem;
+}
+
+.project-card-body h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.2rem;
+  color: #111;
+}
+
+.project-card-body p {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-size: 0.92rem;
+  color: #555;
+}
+
+/* --- Case-sektion pr. projekt --- */
+.project-case {
+  max-width: 900px;
+  margin: 0 auto 7rem;
+  padding: 0 2rem;
+  scroll-margin-top: 2rem;
+}
+
+.case-header h2 {
+  margin: 0 0 0.8rem;
+  font-size: 2rem;
+  color: #111;
+}
+
+.case-intro {
+  font-family: "Inter", sans-serif;
+  color: #555;
+  font-size: 1.05rem;
+  margin-bottom: 2rem;
+}
+
+.case-hero-img {
+  width: 100%;
+  max-height: 480px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+/* --- Faneblade --- */
+.case-tab-buttons {
+  display: flex;
+  gap: 0.5rem;
+  border-bottom: 2px solid #eee;
+  margin-bottom: 1.8rem;
+  flex-wrap: wrap;
+}
+
+.case-tab-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: #888;
+  padding: 0.7rem 0.2rem;
+  margin-right: 1.6rem;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -2px;
+  transition:
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.case-tab-btn:hover {
+  color: #111;
+}
+
+.case-tab-btn.is-active {
+  color: #e09e96;
+  border-bottom-color: #e09e96;
+}
+
+.case-tab-panel {
+  display: none;
+  font-family: "Inter", sans-serif;
+  color: #333;
+  line-height: 1.7;
+}
+
+.case-tab-panel.is-active {
+  display: block;
+}
+
+.case-images {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.2rem;
+  flex-wrap: wrap;
+}
+
+.case-images img {
+  width: 100%;
+  max-width: 280px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+/* --- Knap links til opgaveløsninger --- */
+.task-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.task-link {
+  display: inline-block;
+  padding: 0.55rem 1.2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 0.85rem;
+  background-color: #111;
+  color: #e09e96;
+  text-decoration: none;
+  border-radius: 4px;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.task-link:hover {
+  background-color: #e09e96;
+  color: #000;
+  border: 1px solid #000;
+}
+
+/* --- Mobile --- */
+@media (max-width: 768px) {
+  .portfolio-header {
+    padding: 5rem 1.5rem 2rem;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+    padding: 0 1.5rem;
+    margin-bottom: 4rem;
+  }
+
+  .project-case {
+    padding: 0 1.2rem;
+    margin-bottom: 4.5rem;
+  }
+
+  .case-hero-img {
+    max-height: 260px;
+  }
+
+  .case-tab-buttons {
+    gap: 0;
+  }
+
+  .case-tab-btn {
+    margin-right: 1rem;
+    font-size: 0.88rem;
+  }
+
+  .case-images {
+    flex-direction: column;
+  }
+
+  .case-images img {
+    max-width: 100%;
+  }
+
+  .task-link {
+    width: 100%;
+    text-align: center;
+  }
+}

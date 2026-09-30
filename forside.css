@@ -1,0 +1,106 @@
+/* --- Hero-intro: portræt + tekst, det første man ser --- */
+.hero-intro {
+  display: flex;
+  align-items: center;
+  padding: 11rem 3rem 8rem;
+  background-color: #fafafa;
+}
+
+.hero-intro-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.hero-intro-image {
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-intro-image img {
+  width: 340px;
+  height: 340px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+.hero-intro-text {
+  flex: 1;
+  min-width: 280px;
+  max-width: 520px;
+}
+
+.hero-eyebrow {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #e09e96;
+  margin: 0 0 0.5rem;
+}
+
+.hero-intro-text h1 {
+  font-size: 2.6rem;
+  margin: 0 0 1.2rem;
+  color: #111;
+}
+
+.hero-desc {
+  font-family: "Inter", sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 2rem;
+}
+
+.hero-btn {
+  display: inline-block;
+  background-color: black;
+  color: #e09e96;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 0.7rem 1.6rem;
+  border: 1px solid black;
+  transition: all 0.3s ease;
+}
+
+.hero-btn:hover {
+  background-color: #e09e96;
+  color: #000;
+  border-color: #000;
+}
+
+/* --- Mobil --- */
+@media (max-width: 768px) {
+  .hero-intro {
+    padding: 8rem 1.5rem 4rem;
+    text-align: center;
+  }
+
+  .hero-intro-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .hero-intro-image img {
+    width: 220px;
+    height: 220px;
+  }
+
+  .hero-intro-text {
+    max-width: 100%;
+  }
+
+  .hero-intro-text h1 {
+    font-size: 2rem;
+  }
+}

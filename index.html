@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="general.css" />
+    <link rel="stylesheet" href="forside.css" />
+    <title>Julie Stigsen – Portfolio</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
+  </head>
+  <body>
+    <header class="header header--subpage">
+      <div class="header-inner">
+        <a href="index.html" class="logo">
+          <img src="logo.webp" alt="Julie Stigsen logo" />
+        </a>
+
+        <!-- Desktop menu -->
+        <nav class="nav">
+          <a href="ommig.html">Om mig</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="kontakt.html">Kontakt</a>
+        </nav>
+
+        <!-- Burger mobil -->
+        <input type="checkbox" id="burger-toggle" class="burger-toggle" />
+        <label for="burger-toggle" class="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+
+        <!-- Mobil menu -->
+        <nav class="mobile-nav">
+          <a href="ommig.html">Om mig</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="kontakt.html">Kontakt</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero: portræt + intro er nu det første man ser -->
+      <section class="hero-intro">
+        <div class="hero-intro-container">
+          <div class="hero-intro-image">
+            <img src="billede.webp" alt="Portrætbillede af Julie Stigsen" />
+          </div>
+          <div class="hero-intro-text">
+            <p class="hero-eyebrow">Multimediedesignstuderende</p>
+            <h1>Julie Bibiane Høegh Stigsen</h1>
+            <p class="hero-desc">
+              Jeg studerer multimediedesign på Erhvervsakademi København, og
+              brænder særligt for digitale, interaktive oplevelser, fra idé og
+              koncept til at det står levende og virker.
+              <br /><br />
+              På denne side kan du se et udvalg af de projekter, jeg er mest
+              stolt af fra mit studieforløb.
+            </p>
+            <a href="portfolio.html" class="hero-btn">Se min portfolio</a>
+          </div>
+        </div>
+      </section>
+      <div class="spacer"></div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-left">
+        <div class="logo-footer">
+          <a href="index.html" class="logo">
+            <img src="logo.webp" alt="Logo" />
+          </a>
+        </div>
+        <div class="footer-contact">
+          <p class="footer-name">Julie Bibiane Høegh Stigsen</p>
+          <p class="footer-email">just0003@stud.ek.dk</p>
+        </div>
+      </div>
+      <nav class="footer-nav">
+        <a href="ommig.html">Om mig</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="kontakt.html">Kontakt</a>
+      </nav>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>

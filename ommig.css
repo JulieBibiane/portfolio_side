@@ -1,0 +1,170 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* --- Intro: billede + tekst --- */
+.about-content {
+  display: flex;
+  justify-content: center;
+  padding: 9rem 2rem 4rem;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.about-image {
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.about-image img {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+.about-text {
+  flex: 1;
+  min-width: 260px;
+  max-width: 480px;
+  font-family: "Inter", sans-serif;
+}
+
+.about-text h1 {
+  margin: 0 0 1rem;
+  font-size: 2.2rem;
+  color: #111;
+}
+
+.about-text p {
+  line-height: 1.7;
+  color: #333;
+  margin-bottom: 1.1rem;
+}
+
+/* --- Info-sektioner: uddannelse, erhvervserfaring m.m. --- */
+.about-extra {
+  padding: 5rem 2rem;
+}
+
+.about-extra--alt {
+  background-color: #f3f0ef;
+}
+
+.about-extra-inner {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.about-extra h2 {
+  color: #e09e96;
+  margin-bottom: 1.2rem;
+}
+
+.about-extra p {
+  font-family: "Inter", sans-serif;
+  line-height: 1.7;
+  color: #222;
+  margin-bottom: 1rem;
+}
+
+/* --- CTA: Mit CV --- */
+.cta-section {
+  background-color: #e09e96;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.cta-section h2 {
+  color: #fff;
+  margin-bottom: 1.5rem;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #000;
+  color: #e09e96;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #e09e96;
+  color: #000;
+  border: 1px solid #000;
+}
+
+/* --- Skills-liste --- */
+.skills-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skills-list li {
+  margin-bottom: 1.3rem;
+}
+
+.skill-title {
+  display: block;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+  color: #111;
+}
+
+.skill-items {
+  display: block;
+  font-family: "Inter", sans-serif;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* --- Mobil --- */
+@media (max-width: 768px) {
+  .about-content {
+    padding: 7rem 1.5rem 3rem;
+  }
+
+  .about-container {
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .about-text {
+    max-width: 100%;
+  }
+
+  .about-image img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .about-extra {
+    padding: 3.5rem 1.5rem;
+  }
+
+  .cta-section {
+    padding: 3.5rem 1.5rem;
+  }
+}
